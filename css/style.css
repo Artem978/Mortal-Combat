@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #010202;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #ffffff;
+}
+.app{
+    background: linear-gradient(90deg, #010202 0%, #010202 50%, rgba(1, 2, 2, 0.2) 90%);
+    background-size: contain;
+    height: 100vh;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 90%;
+    padding-top: 56px;
+    max-width: 1146px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    display: block;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.user-name{
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-right: 15px;
+}
+.film-cover{
+    width: 90%;
+    max-width: 1146px;
+    margin: auto;
+    height: calc(100vh - 96px);
+    display: flex;
+    align-items: center;
+}
+.film-description{
+    max-width: 460px;
+}
+.film-logo{
+    margin-bottom: 18px;
+}
+.film-tags{
+    margin-bottom: 9px;
+    color: #E5E5E5;
+    opacity: 0.4;
+    font-size: 16px;
+    line-height: 140%;
+}
+.film-tag{
+    margin-right: 10px;  
+}
+.film-age{
+    padding: 1px 5px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.film-description{
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 36px;
+}
+.button{
+    font-size: 16px;
+    line-height: 140%;
+    padding: 10px 25px;
+    border:none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.primary-button{
+    background: #EA6E20;
+    margin-right: 15px;
+}
+.default-button{
+    background: #2F2F2F;
+}
+.button-text{
+    vertical-align: middle;
+}
+.button-icon{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@media(max-width: 768px){
+    .film-description{
+        font-size: 16px;
+        max-width: 333px;
+    }
+    .film-logo{
+        max-width: 276px;
+    }
+    .button-text{
+        display: none;
+    }
+    .button-icon{
+        margin: 0;
+    }
+}
+@media(max-width: 576px){
+    .user-name{
+        display: none;
+    }
+    .app{
+       height: auto; 
+       background-image: url('../img/bg-image.png');
+       background-repeat: no-repeat;
+       background-size: 250px;
+       background-position: bottom;
+       padding-bottom: 200px;
+    }
+    video{
+        display: none;
+    }
+}
